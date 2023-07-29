@@ -11,11 +11,11 @@ This analysis involved the transformation of images under the following transfor
 </p>
 
 <p align="center">
-  <img src="einstein_transformed.png" alt="Analysis 1-Transformed Einstein Image" width="500">
+  <img src="einstein_transformed.png" alt="Analysis 1-Transformed Einstein Image" width="1000">
 </p>
 
 <p align="center">
-  <img src="forest_transformed.png" alt="Analysis 1-Transformed Forest Image" width="500">
+  <img src="forest_transformed.png" alt="Analysis 1-Transformed Forest Image" width="1000">
 </p>
 
 
@@ -25,13 +25,13 @@ This analysis had the goal to enhance an image. One method of image enhancement 
 ## 1. Color Balance Adjustment
 
 <p align="center">
-  <img src="forest_color_balanced.png" alt="Analysis 2-Color Balanced Forest Image" width="500">
+  <img src="forest_color_balanced.png" alt="Analysis 2-Color Balanced Forest Image" width="1000">
 </p>
 
 ## 2. Histogram equalization
 
 <p align="center">
-  <img src="forest_hist_equalized.png" alt="Analysis 2-Histogram Equalized Forest Image" width="500">
+  <img src="forest_hist_equalized.png" alt="Analysis 2-Histogram Equalized Forest Image" width="1000">
 </p>
 
 
@@ -39,7 +39,7 @@ This analysis had the goal to enhance an image. One method of image enhancement 
 The goal of this analysis was to improve the image in terms of perceived brightness. One technique that can achieve that is Gamma correction. This technique involves applying a nonlinear adjustment to the pixel values in an image to change its brightness and contrast.
 
 <p align="center">
-  <img src="pollen_gamma_correction.png" alt="Analysis 3-Gamma corrected Pollen Image" width="500">
+  <img src="pollen_gamma_correction.png" alt="Analysis 3-Gamma corrected Pollen Image" width="1000">
 </p>
 
 
@@ -49,17 +49,18 @@ The goal of this analysis was the sharpening of images. Two techniques were appl
 ## 1. Unsharp Masking
 
 <p align="center">
-  <img src="moon_unsharp_masking.png" alt="Analysis 4-Unsharp Masking Moon Image" width="500">
+  <img src="moon_unsharp_masking.png" alt="Analysis 4-Unsharp Masking Moon Image" width="1000">
 </p>
 
 ## 2. Negative Sharpening
 
 <p align="center">
-  <img src="moon_negative_sharpening.png" alt="Analysis 4-Negative Sharpening Moon Image" width="500">
+  <img src="moon_negative_sharpening.png" alt="Analysis 4-Negative Sharpening Moon Image" width="1000">
 </p>
 
 
 # Analysis 5 - Recreation of transformed image
-In this analysis two versions of the same image were used, the original and a transformed one with unknown transformations applied to it. The analysis involved the assessment of the transformations and the  transformation of one image to the other and vice-versa.
+In this analysis two versions of the same image were used, the original and a transformed one with unknown transformations applied to it. The analysis involved the assessment of the uknown transformations and the transformation of one image to the other and vice-versa. The two images can be seen below.
 
-## 1. 
+## 1. From original to transformed image
+The transformed image was used as reference for the transformation
