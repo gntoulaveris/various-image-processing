@@ -60,7 +60,47 @@ The goal of this analysis was the sharpening of images. Two techniques were appl
 
 
 # Analysis 5 - Recreation of transformed image
-In this analysis two versions of the same image were used, the original and a transformed one with unknown transformations applied to it. The analysis involved the assessment of the uknown transformations and the transformation of one image to the other and vice-versa. The two images can be seen below.
+In this analysis two versions of the same image were used, the original and a transformed one with unknown transformations applied to it. The analysis involved the assessment of the uknown transformations and the transformation of one image to the other and vice-versa. 
 
 ## 1. From original to transformed image
-The transformed image was used as reference for the transformation
+The transformed image was used as reference for the transformation. The transformations in order of appliance were the following: gamma correction, negative sharpening with Gaussian kernel, high-pass filter through convolution with a kernel
+
+<p align="center">
+  <img src="lungs_1.png" alt="Analysis 5-Lungs" width="1000">
+</p>
+
+<p align="center">
+  <img src="lungs_final1.png" alt="Analysis 5-Lungs" width="1000">
+</p>
+
+
+## 2. From transformed image to original
+The original image was used as reference for this transformation. The transformations in order of appliance were the following: gamma correction and inversion, low-pass filtering, histogram equalization, Gaussian blurring, unsharp masking, contrast stretching.
+
+<p align="center">
+  <img src="lungs_2.png" alt="Analysis 5-Lungs" width="1000">
+</p>
+
+<p align="center">
+  <img src="lungs_final2.png" alt="Analysis 5-Lungs" width="1000">
+</p>
+
+
+# Analysis 6 - Object detection
+The goal of this analysis was to detect the windows of the house in the image. The edges and corners of the image were detected and based on them a rough estimation of the windows of the house was achieved.
+
+<p align="center">
+  <img src="house_windows.png" alt="Analysis 6-House" width="1000">
+</p>
+
+
+# Analysis 7 - Object Isolation
+The goal of this analysis was to isolate the cue from the billiard table. Since the billiard cue was the sole straight line of the image, it was detected using HughLinesP function. The image was then transformed in black and white. Since a ball was connected to the cue the HoughCirclesC function was used to detect the circles in the image (balls) and a black mask was applied to each one, effectively removing them from the image. The same black mask was applied to the rest of the non-linear objects (whole image besides the cue), thus effectively isolating the object.
+
+<p align="center">
+  <img src="billiard_cue.png" alt="Analysis 7-Billiard Cue" width="1000">
+</p>
+
+
+# Future Work
+The above analysis was built as a blueprint that could be transformed into a pipeline, so that it could be used in future image analysis projects that involved similar preprocessing. During the project it became apparent that some of the analyses couldn't be completely automated and pipelinized, because the transformations applied were highly image and goal dependent (like the lungs analysis - different images may require completely different transformations). The only analyses that could be completely automated seem to be the first two, where simple processing transformations are applied. The rest of the code will probably remain as it is and with some tweaks it could be applied to another project requiring similar operations. 
